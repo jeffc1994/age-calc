@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <script src="script.js"></script>
+
+
+</head>
+
+<body>
+  <div id="age-card">
+    <div id="input-section">
+      <div id="day-input">
+        <div class="header-txt">DAY</div>
+        <input type="number" id="dayValue" placeholder="DD">
+        <div class="errorMsg" id="errorDay"></div>
+      </div>
+      <div id="month-input">
+        <div class="header-txt">MONTH</div>
+        <input type="number" id="monthValue" placeholder="MM">
+        <div class="errorMsg" id="errorMonth"> </div>
+      </div>
+      <div id="year-input">
+        <div class="header-txt">YEAR</div>
+        <input type="number" id="yearValue" placeholder="YYYY">
+        <div class="errorMsg" id="errorYear"></div>
+      </div>
+    </div>
+    <div id="middle-section">
+      <div id="line"></div>
+      <button id="myButton" onclick="calculate()" type="button" class="icon-button">
+        <img src="./assets/images/icon-arrow.svg" alt="Arrow Icon" class="icon">
+      </button>
+      <div id="wrapper"></div>
+    </div>
+    <div id="calculated-section">
+      <div class="container">
+        <div class="age-number" id="age-years">--</div>
+        <div class="calculated-txt">years</div>
+      </div>
+      <div class="container">
+        <div class="age-number" id="age-months">--</div>
+        <div class="calculated-txt">months</div>
+      </div>
+      <div class="container">
+        <div class="age-number" id="age-days">--</div>
+        <div class="calculated-txt">days</div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</body>
+
+</html>
